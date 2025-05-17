@@ -58,3 +58,9 @@ def test_python_repl_tool_exception():
     assert "Error executing code:" in result
     assert code in result
     assert "Exception" in result
+
+
+def test_python_repl_tool_non_string_input():
+    """python_repl_tool should reject non-string input."""
+    result = python_repl_tool(123)
+    assert "code must be a string" in result
