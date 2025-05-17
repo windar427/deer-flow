@@ -29,7 +29,7 @@ class TestVolcengineTTS:
         assert tts.voice_type == "test_voice"
         assert tts.host == "test.host.com"
         assert tts.api_url == "https://test.host.com/api/v1/tts"
-        assert tts.header == {"Authorization": "Bearer;test_token"}
+        assert tts.header == {"Authorization": "Bearer test_token"}
 
     def test_initialization_with_defaults(self):
         """Test initialization with default values."""
