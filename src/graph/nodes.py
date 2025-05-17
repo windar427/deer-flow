@@ -245,7 +245,7 @@ def coordinator_node(
 
 
 def reporter_node(state: State):
-    """Reporter node that write a final report."""
+    """Reporter node that writes the final report."""
     logger.info("Reporter write final report")
     current_plan = state.get("current_plan")
     input_ = {
