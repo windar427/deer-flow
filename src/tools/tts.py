@@ -43,7 +43,8 @@ class VolcengineTTS:
         self.voice_type = voice_type
         self.host = host
         self.api_url = f"https://{host}/api/v1/tts"
-        self.header = {"Authorization": f"Bearer;{access_token}"}
+        # Use standard "Bearer" authorization header format
+        self.header = {"Authorization": f"Bearer {access_token}"}
 
     def text_to_speech(
         self,
