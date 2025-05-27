@@ -522,6 +522,17 @@ The application supports several command-line arguments to customize its behavio
 - **--max_step_num**: Maximum number of steps in a research plan (default: 3)
 - **--debug**: Enable detailed debug logging
 
+### Module Knowledge Graph
+
+Generate a simple graph of internal module dependencies:
+
+```bash
+python src/tools/knowledge_graph.py
+dot -Tpng knowledge_graph.dot -o graph.png
+```
+
+See [docs/knowledge_graph.md](docs/knowledge_graph.md) for more details.
+
 ## FAQ
 
 Please refer to the [FAQ.md](docs/FAQ.md) for more details.
